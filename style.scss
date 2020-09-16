@@ -1,0 +1,78 @@
+// Файл обнуляющих стилей
+@import "null_style.scss";
+
+body {
+	font-size: 24px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+}
+.header {
+	background-color: #3D3EC1;
+	color: #fff;
+	&__title {
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+.container {
+	display: flex;
+	flex: 1 1 auto;
+	&__row {
+		display: flex;
+		flex: 1 1 auto;
+	}
+}
+.nav {
+	flex: 1 1 20%;
+	background-color: #DF971F;
+	&__title {
+		padding: 30px;
+	}
+}
+
+.main {
+	flex: 1 1 60%;
+	&__title {
+		padding: 30px;
+		font-weight: 700;
+	}
+	&__text {
+		padding: 30px;
+	}
+}
+.sidebar {
+	flex: 1 1 20%;
+	background-color: #CA3480;
+	&__title {
+		padding: 30px;
+	}
+}
+
+.footer {
+	background-color: #78E618;
+	color: #fff;
+	margin-top: auto;
+	&__title {
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+// Адаптивная верстка
+
+@media (max-width: 1200px) {
+	.container{
+		&__row {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
